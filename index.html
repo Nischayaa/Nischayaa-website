@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Nischayaa: Dazzle of Wellness — wellness, movement and an active lifestyle.">
+  <title>Nischayaa — Dazzle of Wellness</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="nav-wrap">
+    <nav class="nav container">
+      <a class="brand" href="#home" aria-label="Nischayaa home">
+        <img src="assets/nischayaa-logo.jpg" alt="Nischayaa logo">
+        <span>Nischayaa</span>
+      </a>
+      <div class="nav-links">
+        <a href="#about">About</a>
+        <a href="#videos">Videos</a>
+        <a href="#contact">Contact</a>
+      </div>
+      <a class="nav-cta" href="https://wa.me/917058591385" target="_blank" rel="noopener">Join / Enquire</a>
+    </nav>
+  </header>
+
+  <main id="home">
+    <section class="hero">
+      <div class="hero-glow glow-one"></div>
+      <div class="hero-glow glow-two"></div>
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <div class="eyebrow"><span></span> DAZZLE OF WELLNESS</div>
+          <h1>Move better.<br><em>Live brighter.</em></h1>
+          <p class="hero-text">
+            Welcome to Nischayaa — a space built around movement, wellness and an active lifestyle.
+            Discover what we do, hear from our members and stay connected with the Nischayaa community.
+          </p>
+          <div class="hero-actions">
+            <a class="btn primary" href="#videos">Watch our videos <span>↗</span></a>
+            <a class="btn secondary" href="https://wa.me/917058591385" target="_blank" rel="noopener">Talk to us</a>
+          </div>
+          <div class="mini-contact">
+            <span>📞 70585 91385</span>
+            <span>✉️ nishchayaa.rtn@gmail.com</span>
+          </div>
+        </div>
+
+        <div class="hero-card">
+          <div class="hero-card-top">
+            <span class="pill">NISCHAYAA</span>
+            <span class="dot"></span>
+          </div>
+          <img src="assets/nischayaa-logo.jpg" alt="Nischayaa Dazzle of Wellness">
+          <div class="hero-card-bottom">
+            <strong>Dazzle of Wellness</strong>
+            <span>Active • Healthy • Connected</span>
+          </div>
+        </div>
+      </div>
+      <div class="wave"></div>
+    </section>
+
+    <section class="section about" id="about">
+      <div class="container two-col">
+        <div>
+          <p class="section-kicker">ABOUT NISCHAYAA</p>
+          <h2>A simple place to<br><span>feel your best.</span></h2>
+        </div>
+        <div class="about-copy">
+          <p>
+            Nischayaa — Dazzle of Wellness is a wellness-focused community created to encourage
+            movement, consistency and a healthier everyday lifestyle.
+          </p>
+          <p>
+            This website is kept intentionally simple: explore our story, watch member videos,
+            and get in touch with us directly.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section video-section" id="videos">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <p class="section-kicker">FROM THE COMMUNITY</p>
+            <h2>Watch. Feel. <span>Get inspired.</span></h2>
+          </div>
+          <p class="section-note">Real moments and videos from Nischayaa.</p>
+        </div>
+
+        <div id="videoGrid" class="video-grid">
+          <div class="loading-card">
+            <div class="loader"></div>
+            <p>Loading videos…</p>
+          </div>
+        </div>
+
+        <div id="emptyVideos" class="empty-state hidden">
+          <div class="empty-icon">▶</div>
+          <h3>Videos are coming soon</h3>
+          <p>Check back here for Nischayaa videos and member experiences.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section contact" id="contact">
+      <div class="container contact-card">
+        <div>
+          <p class="section-kicker light">LET'S CONNECT</p>
+          <h2>Ready to be part of<br><span>Nischayaa?</span></h2>
+          <p>Have a question, want to know more, or want to join? Reach out directly.</p>
+        </div>
+        <div class="contact-actions">
+          <a class="contact-row" href="tel:+917058591385">
+            <span class="contact-icon">☎</span>
+            <div><small>Call us</small><strong>70585 91385</strong></div>
+          </a>
+          <a class="contact-row" href="mailto:nishchayaa.rtn@gmail.com">
+            <span class="contact-icon">✉</span>
+            <div><small>Email</small><strong>nishchayaa.rtn@gmail.com</strong></div>
+          </a>
+          <a class="big-whatsapp" href="https://wa.me/917058591385" target="_blank" rel="noopener">
+            Message on WhatsApp <span>→</span>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <img src="assets/nischayaa-logo.jpg" alt="">
+        <span>Nischayaa — Dazzle of Wellness</span>
+      </div>
+      <span>© <span id="year"></span> Nischayaa. All rights reserved.</span>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+  <script src="config.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nischayaa Admin</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="admin.css">
+</head>
+<body>
+  <div class="admin-shell">
+    <header>
+      <a href="index.html" class="brand"><img src="assets/nischayaa-logo.jpg" alt="">Nischayaa Admin</a>
+      <button id="logoutBtn" class="ghost hidden">Log out</button>
+    </header>
+
+    <main>
+      <section id="loginPanel" class="panel narrow">
+        <div class="kicker">PRIVATE AREA</div>
+        <h1>Admin login</h1>
+        <p>Sign in to upload and manage Nischayaa videos.</p>
+        <form id="loginForm">
+          <label>Email<input id="email" type="email" required value="nishchayaa.rtn@gmail.com"></label>
+          <label>Password<input id="password" type="password" required placeholder="Your Supabase admin password"></label>
+          <button class="primary" type="submit">Sign in</button>
+          <div id="loginMessage" class="message"></div>
+        </form>
+      </section>
+
+      <section id="dashboard" class="hidden">
+        <div class="dashboard-head">
+          <div>
+            <div class="kicker">NISCHAYAA</div>
+            <h1>Video dashboard</h1>
+            <p>Upload a video and it will appear on the public website.</p>
+          </div>
+        </div>
+
+        <div class="panel">
+          <h2>Upload new video</h2>
+          <form id="uploadForm">
+            <div class="two">
+              <label>Title<input id="title" type="text" placeholder="e.g. Member experience" required></label>
+              <label>Description<input id="description" type="text" placeholder="Short description (optional)"></label>
+            </div>
+            <label>Video file<input id="videoFile" type="file" accept="video/*" required></label>
+            <label class="check"><input id="published" type="checkbox" checked> Publish immediately</label>
+            <button class="primary" type="submit" id="uploadBtn">Upload video</button>
+            <div id="uploadMessage" class="message"></div>
+          </form>
+        </div>
+
+        <div class="panel">
+          <div class="list-head"><h2>Published videos</h2><button id="refreshBtn" class="ghost">Refresh</button></div>
+          <div id="videoList"></div>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+  <script src="config.js"></script>
+  <script src="admin.js"></script>
+</body>
+</html>
