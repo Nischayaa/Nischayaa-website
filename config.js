@@ -14,6 +14,6 @@ const SUPABASE_URL = "";
 const SUPABASE_ANON_KEY = "";
 
 window.NISCHAYAA_CONFIG = {
-  supabaseUrl: https://xblxytpdjgnljduumsky.supabase.co/rest/v1/,
+  supabaseUrl: https://[xblxytpdjgnljduumsky].supabase.co,
   supabaseAnonKey: sb_publishable_QHIgQfS5cI9cWFCHMjgR7Q_yShoV9j7
 };
